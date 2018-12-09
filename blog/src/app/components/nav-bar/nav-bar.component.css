@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #cbdaeb;
+    font:16px Arial;
+    margin: 10px 10px 10px 10px;
+  }
+  
+  ul.header_list{
+    display: inline;
+    list-style-type: none;
+  }
+  
+  .image-wrapper {
+    padding: 0;
+  }
+  
+  ul.list {
+    display: block;
+    list-style-type: disc;
+  }
+  
+  a {
+    border-radius: 35px;
+    padding:10px;
+    background-color: white;
+  }
+  
+  a:hover {
+    background-color:#767d84;
+    color:white;
+    transition: all 0.5s;
+  }
+  
+  iframe {
+    margin: 5px 0 5px 0;
+    width: 100%;
+  }
+  
+  nav {
+    width: 100%;
+  }
+  
+  #header {
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    background-color: #000000;
+    color: #ffffff;
+    border:thick double #ffffff;
+    border-radius: 8px
+  }
+  
+  #form {
+    border: 1.4px solid #ffffff;
+    border-radius: 10px;
+    margin-top:10px;
+    padding:30px 30px;
+  }
+  
+  input{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  .myButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  .myButton:hover {
+    background-color: #767d84;
+  }
+  
+  .paragraph {
+    margin-left:15px;
+    padding-bottom:1000px;
+  }
+  
+  .is-invalid {
+    border: solid 1px #dc3545;
+  }
+  
+  .invalid_feedback_for_txt {
+    display: block;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+  }
+  
+  .is-valid {
+    border: solid 1px #28a745;
+  }
+  
+  .valid_feedback_for_txt {
+    display: block;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #28a745;
+  }
+  

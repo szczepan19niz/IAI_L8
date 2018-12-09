@@ -1,0 +1,86 @@
+<div class="navbar" ></div>
+
+<div class="col-md-9"><br>
+	<form id="form" class="needs-validation" novalidate>
+        <fieldset>
+            <legend>Wypełnij formularz:</legend><br>
+
+            <div class="form-group">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" placeholder="Podaj imię" required/>
+                <div class="valid_feedback_for_txt" id="user_name_valid"></div>
+                <div class="invalid_feedback_for_txt" id="user_name_invalid"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" name="surname" placeholder="Podaj nazwisko" required/>
+                <div class="valid_feedback_for_txt" id="user_surname_valid"></div>
+                <div class="invalid_feedback_for_txt" id="user_surname_invalid"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Podaj email" required/>
+                <div class="valid-feedback">** OK!</div>
+                <div class="invalid-feedback">** Wpisz poprawny email!</div>
+            </div>
+
+            <br>
+            <label>Płeć: </label>
+            <br>
+
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required/>
+                <label class="custom-control-label" for="customControlValidation2">Mężczyzna</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+                <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required/>
+                <label class="custom-control-label" for="customControlValidation3">Kobieta</label>
+                <div class="invalid-feedback">** Wybierz płeć!</div>
+                <div class="valid-feedback"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="text">Opis</label>
+                <textarea class="form-control" id="text" placeholder="To pole nie jest wymagane" rows="5" ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Wiek:</label>
+                <input id="age" type="text" name="age" placeholder="Podaj wiek" required/>
+                <div class="valid_feedback_for_txt" id="user_age_valid"></div>
+                <div class="invalid_feedback_for_txt" id="user_age_invalid"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="stan">Stan cywilny:</label>
+                <select class="custom-select" required>
+                    <option value="">Wybierz z listy</option>
+                    <option>Panna</option>
+                    <option>Kawaler</option>
+                    <option>Mężatka</option>
+                    <option>Żonaty</option>
+                </select>
+                <div class="invalid-feedback">Wybierz opcje!</div>
+            </div>
+
+            <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required/>
+                <label class="custom-control-label" for="customControlValidation1">Potwierdzam poprawność wprowadzonych danych</label>
+                <div class="invalid-feedback">Wyraź zgodę przed wysłaniem!</div>
+            </div>
+
+            <button class="btn btn-success" type="submit" value="submit">Wyślij</button>
+            <button class="btn btn-danger" type="reset" value="reset">Wyczyść</button>
+
+        </fieldset>
+    </form>
+</div>
+<br>
+
+<button class="myButton" title="Wróć do góry">Do Góry</button>
+
+<script src="js/script_validation.js" type="text/javascript"></script>
+<script src="js/script_button.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>

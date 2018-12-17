@@ -9,6 +9,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MapComponent } from './components/map/map.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogItemComponent } from './components/blog-item/blog-item.component';
+import { BlogItemImageComponent } from './components/blog-item-image/blog-item-image.component';
+import { BlogItemDetailComponent } from './components/blog-item-detail/blog-item-detail.component';
+import { BlogItemTextComponent } from './components/blog-item-text/blog-item-text.component';
 
 
 
@@ -33,6 +37,10 @@ const appRoutes: Routes = [
     path: 'blog',
     component: BlogComponent
   },
+  {
+    path: 'blog/detail/:id',
+    component: BlogItemDetailComponent
+  },
 ];
 
 
@@ -44,7 +52,11 @@ const appRoutes: Routes = [
     ContactComponent,
     MapComponent,
     QuizComponent,
-    BlogComponent
+    BlogComponent,
+    BlogItemComponent,
+    BlogItemImageComponent,
+    BlogItemDetailComponent,
+    BlogItemTextComponent
   ],
   imports: [
     BrowserModule,

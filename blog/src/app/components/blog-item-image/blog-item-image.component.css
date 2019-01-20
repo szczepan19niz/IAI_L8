@@ -1,0 +1,10 @@
+.position_image{
+    text-align: center;
+}
+
+img{
+    width: 220px;
+    height:150px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}

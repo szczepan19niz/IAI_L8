@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogItemDetailComponent implements OnInit {
 
-  image = 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg';
-  text = 'Tytuł';
+  image = 'http://brandz.com/admin/uploads/brands/Google.png';
+  text = 'Google';
 
+  
   constructor() { }
 
   ngOnInit() {

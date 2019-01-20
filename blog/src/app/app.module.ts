@@ -14,6 +14,11 @@ import { BlogItemImageComponent } from './components/blog-item-image/blog-item-i
 import { BlogItemDetailComponent } from './components/blog-item-detail/blog-item-detail.component';
 import { BlogItemTextComponent } from './components/blog-item-text/blog-item-text.component';
 
+import { FilterPipe } from './pipes/filter.pipe';
+import { FormsModule } from '@angular/forms';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { BlogHomeComponent } from './components/blog-home/blog-home.component';
+import { TextFormatDirective } from './directives/text-format.directive';
 
 
 const appRoutes: Routes = [
@@ -34,8 +39,8 @@ const appRoutes: Routes = [
     component: QuizComponent
   },
   {
-    path: 'blog',
-    component: BlogComponent
+    path: 'blog', 
+    component: BlogHomeComponent
   },
   {
     path: 'blog/detail/:id',
@@ -56,11 +61,16 @@ const appRoutes: Routes = [
     BlogItemComponent,
     BlogItemImageComponent,
     BlogItemDetailComponent,
-    BlogItemTextComponent
+    BlogItemTextComponent,
+    FilterPipe,
+    SearchBarComponent,
+    BlogHomeComponent,
+    TextFormatDirective
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

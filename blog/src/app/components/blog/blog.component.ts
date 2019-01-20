@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-blog',
@@ -6,42 +6,51 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
+  @Input() filterText: string;
 
   items = [
     {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 1'
+      image: 'http://brandz.com/admin/uploads/brands/Google.png',
+      text: 'Google'
     },
     {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 2'
+      image: 'http://brandz.com/admin/uploads/brands/2_Apple.png',
+      text: 'Apple'
     },
     {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 3'
-    }, {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 4'
-    }, {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 5'
-    }, {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 6'
-    }, {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 7'
-    }, {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 8'
-    }, {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 9'
-    }, {
-      image: 'http://osnews.pl/wp-content/uploads/2016/06/it-grafika.jpg',
-      text: 'Tytuł 10'
+      image: 'https://pngimg.com/uploads/amazon/amazon_PNG13.png',
+      text: 'Amazon'
+    }, 
+    {
+      image: 'http://brandz.com/admin/uploads/brands/4_Microsoft.png',
+      text: 'Microsoft'
+    }, 
+    {
+      image: 'http://brandz.com/admin/uploads/brands/14_Tencent.png',
+      text: 'Tencent'
+    }, 
+    {
+      image: 'http://brandz.com/admin/uploads/brands/Facebook.png',
+      text: 'Facebook'
+    }, 
+    {
+      image: 'http://brandz.com/admin/uploads/brands/7_Visa.png',
+      text: 'Visa'
+    }, 
+    {
+      image: 'http://brandz.com/admin/uploads/brands/McDonalds.png',
+      text: 'McDonald'
+    }, 
+    {
+      image: 'http://brandz.com/admin/uploads/brands/Alibaba.png',
+      text: 'Alibaba'
+    }, 
+    {
+      image: 'http://brandz.com/admin/uploads/brands/8_ATandT.png',
+      text: 'AT&T'
     }
   ];
+
 
   constructor() { }
 

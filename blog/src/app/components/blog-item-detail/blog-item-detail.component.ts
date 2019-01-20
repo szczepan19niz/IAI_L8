@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BlogItemDetailComponent implements OnInit {
 
   image = 'http://brandz.com/admin/uploads/brands/Google.png';
-  text = 'Google';
+  text = 'Google info??';
 
   
   constructor() { }

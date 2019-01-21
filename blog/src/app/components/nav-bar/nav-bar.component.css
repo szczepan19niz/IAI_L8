@@ -6,6 +6,7 @@ body {
   }
   
   ul.header_list{
+    
     display: inline;
     list-style-type: none;
   }

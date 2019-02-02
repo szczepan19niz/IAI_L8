@@ -5,6 +5,11 @@ body {
     margin: 10px 10px 10px 10px;
   }
   
+  .caret.caret-up {
+    border-top-width: 0;
+    border-bottom: 4px solid #fff;
+  }
+
   ul.header_list{
     
     display: inline;

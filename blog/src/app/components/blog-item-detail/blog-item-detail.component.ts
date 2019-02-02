@@ -8,23 +8,22 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./blog-item-detail.component.css']
 })
 export class BlogItemDetailComponent implements OnInit {
-  
-  image = 'http://brandz.com/admin/uploads/brands/Google.png';
-  text = 'Google info??';
 
-  public item;
-  public id;
+  item: any;
+
   constructor(private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-      this.getId();
-      this.item = this.dataService.getById(this.id);
+    let id: string;
+    this.route.paramMap.subscribe(params => {
+      id = params.get('id');
+      });
+    if (id) {
+      this.item = this.dataService.getById(id);
+      }
+     else {
+      this.item = 1;
+    }
   }
-
-  getId() {
-    this.route.queryParams.subscribe(params => {
-      this.id = params['id'];
-  });
-  }
-
 }
+
